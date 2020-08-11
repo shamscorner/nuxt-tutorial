@@ -1,13 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        TutorialApp
-      </h1>
-      <div class="links">
-        <NuxtLink to="/about" class="button--grey">About Us</NuxtLink>
-      </div>
+      <h1>Welcome to the about page!</h1>
+      <NuxtLink to="/" class="text-blue-600">Homepage</NuxtLink>
     </div>
   </div>
 </template>
