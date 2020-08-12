@@ -13,7 +13,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    window.onNuxtReady(() => {
+      console.log('Nuxt.js is ready and mounted')
+    })
+  },
+}
 </script>
 
 <style>
