@@ -9,6 +9,11 @@
     <div>
       <NuxtLink to="/" class="text-blue-500">Home page</NuxtLink>
     </div>
+    <div>
+      <button @click="refresh" class="my-3 p-2 bg-teal-500 text-teal-100">
+        Refresh
+      </button>
+    </div>
   </div>
 </template>
 
@@ -16,5 +21,12 @@
 export default {
   props: ['error'],
   layout: 'error',
+
+  methods: {
+    refresh() {
+      console.log('refreshing...')
+      this.$nuxt.refresh()
+    },
+  },
 }
 </script>
