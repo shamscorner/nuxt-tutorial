@@ -3,7 +3,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -71,4 +71,10 @@ export default {
    * See https://nuxtjs.org/guides/features/loading#customising-the-progress-bar
    */
   loading: '~/components/LoadingBar.vue',
+
+  loadingIndicator: {
+    name: 'circle',
+    color: '#3B8070',
+    background: 'white',
+  },
 }
