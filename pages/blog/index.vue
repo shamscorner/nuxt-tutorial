@@ -15,6 +15,17 @@
 export default {
   layout: 'blog',
 
+  head: {
+    title: 'Welcome to Blog',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'This is a blog home page',
+      },
+    ],
+  },
+
   data() {
     return {
       posts: [],

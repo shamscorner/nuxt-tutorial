@@ -19,10 +19,18 @@ export default {
     return { post }
   },
 
-  //   watchQuery(newQuery, oldQuery) {
-  //     console.log('watchQuery -> oldQuery', oldQuery)
-  //     console.log('watchQuery -> newQuery', newQuery)
-  //   },
+  head() {
+    return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.post.description,
+        },
+      ],
+    }
+  },
 
   methods: {
     nextPost() {
