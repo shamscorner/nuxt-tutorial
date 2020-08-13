@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  loading: false,
   data() {
     return {
       currentPostId: 1,
