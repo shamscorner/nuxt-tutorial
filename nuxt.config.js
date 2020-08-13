@@ -70,4 +70,5 @@ export default {
    * modify the nuxt default loader
    * See https://nuxtjs.org/guides/features/loading#customising-the-progress-bar
    */
+  loading: '~/components/LoadingBar.vue',
 }

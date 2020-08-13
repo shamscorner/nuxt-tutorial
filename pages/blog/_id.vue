@@ -8,7 +8,10 @@
 
 <script>
 export default {
-  loading: false,
+  loading: {
+    continuous: true,
+    duration: 10000,
+  },
   data() {
     return {
       currentPostId: 1,
